@@ -12,7 +12,9 @@ from dotenv import load_dotenv
 import talib
 import random
 from flask import Flask  # Required for anti-sleep functionality
-
+import os
+os.environ['TA_LIBRARY_PATH'] = os.path.expanduser('~/ta-lib/lib')
+os.environ['LD_LIBRARY_PATH'] = os.path.expanduser('~/ta-lib/lib') + ':' + os.environ.get('LD_LIBRARY_PATH', '')
 # Load environment variables
 load_dotenv()
 
