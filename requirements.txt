@@ -1,0 +1,8 @@
+python-dotenv
+python-telegram-bot
+requests
+numpy
+pytz
+pandas
+ta-lib
+Flask
